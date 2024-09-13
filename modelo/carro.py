@@ -1,16 +1,21 @@
-class Viagem:
-    def__int__(self,)
-    nome = ""
-    pais_Origem = ""
-    pais_Destino = ""
-    ativo = False
+class Carro:
+clientes = []
 
-pessoa_Vinicius = Viagem()
-pessoa_Luiza = Viagem()
+def __init__(self, nome, servico, horario, pagamento):
+self.nome = nome
+self.servico = servico
+self.horario = horario
+self.pagamento = pagamento
+Cliente.clientes.append(self)
 
-pessoa_Luiza.nome = "Luiza Ribeiro"
-pessoa_Luiza.pais_Origem = "Brasil"
-pessoa_Luiza.pais_Destino = "Alemanha"
+def __str_(self):
+return f'{self.nome} | {self.servico} | {self.horario} | {self.pagamento}'
 
-Viagens = [pessoa_Luiza, pessoa_Vinicius]
+def listar_cliente():
+for cliente in Cliente.clientes:
+print(f'{cliente.nome} | {cliente.servico} | {cliente.horario} | {cliente.pagamento}')
+cliente_Maria = Cliente('Maria', 'Corte de cabelo', '10:00', 'Dinheiro')
+cliente_Fernanda = Cliente('Fernanda', 'Manicure', '14:00', 'Cartão')
+cliente_Ana = Cliente('Ana', 'Corte de cabelo', '11:00', 'Dinheiro')
 
+Cliente.listar_cliente()
